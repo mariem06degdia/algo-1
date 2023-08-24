@@ -1,0 +1,23 @@
+ALGORITHM algorithm_name
+VAR
+    C:CHAR
+   nc: INTEGER:=0;
+    nw:INTEGER:=0;
+    nv:INTEGER:=0;
+
+BEGIN
+WHILE (c<>".") DO
+   read(c)
+   nc:=nc+1
+   IF (c="a"or c="i"or c="o" or c="u" or c="y" or c="e") THEN
+    nv:=nv+1
+
+   END_IF
+   IF (c=" ") THEN
+    nw:=nw+1
+   END_If
+END_WHILE
+write("the lengh of the sentence is",nc")
+write("the nbr of words is  ",nw)
+write("the nbr of vow is  ",nv)
+END
